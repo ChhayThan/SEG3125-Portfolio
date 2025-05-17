@@ -5,7 +5,7 @@ import cv from "./../assets/cv.webp";
 import Resume from "./../assets/Resume.pdf";
 export const Home = () => {
   return (
-    <section className="w-screen h-screen p-5 space-y-5 flex flex-col min-[832px]:flex-row justify-center items-center gap-5">
+    <section className="w-screen min-h-[50vh] p-5 space-y-5 flex flex-col min-[832px]:flex-row justify-center items-center gap-5">
       <div className="flex gap-1 flex-col">
         <h1 className="text-[min(10vw,70px)] leading-[0.9] font-bold tracking-tighter">
           Hello there <span className="inline-block animate-wave"> 👋</span>
@@ -56,8 +56,8 @@ export const Home = () => {
           </h2>
 
           <h2 className="pt-2 text-[min(4vw,16px)]">
-            Welcome to my portfolio website Scroll! <br />
-            down for more...
+            Welcome to my portfolio website! <br />
+            Scroll down for more...
           </h2>
         </div>
       </div>

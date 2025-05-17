@@ -5,7 +5,7 @@
 
 @layer components {
   .icon {
-    @apply w-[min(5vw,25px)] object-contain hover:-translate-y-0.5 transition-all ease-in duration-100;
+    @apply w-[min(5vw,35px)] object-contain hover:-translate-y-0.5 transition-all ease-in duration-100;
   }
 }
 
