@@ -1,5 +1,5 @@
-import aboutPNG from "./../assets/about.png";
-import workPNG from "./../assets/work.png";
+import aboutPNG from "./../../assets/about.png";
+import workPNG from "./../../assets/work.png";
 
 export const About = () => {
   return (

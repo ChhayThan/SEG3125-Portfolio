@@ -1,4 +1,4 @@
-import comingSoonSign from "./../assets/comingsoonsign.png";
+import comingSoonSign from "./../../assets/comingsoonsign.png";
 export const CaseStudy = () => {
   return (
     <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">

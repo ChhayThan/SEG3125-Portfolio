@@ -1,8 +1,8 @@
-import linkedIn from "./../assets/linkedin.webp";
-import github from "./../assets/github.webp";
-import mail from "./../assets/mail.webp";
-import cv from "./../assets/cv.webp";
-import Resume from "./../assets/Resume.pdf";
+import linkedIn from "./../../assets/linkedin.webp";
+import github from "./../../assets/github.webp";
+import mail from "./../../assets/mail.webp";
+import cv from "./../../assets/cv.webp";
+import Resume from "./../../assets/Resume.pdf";
 export const Home = () => {
   return (
     <section className="w-screen min-h-[50vh] p-5 space-y-5 flex flex-col min-[832px]:flex-row justify-center items-center gap-5">

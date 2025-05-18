@@ -1,8 +1,8 @@
 import "./App.css";
-import { About } from "./components/About";
-import { CaseStudy } from "./components/CaseStudy";
-import { Experience } from "./components/Experience";
-import { Home } from "./components/Home";
+import { About } from "./components/section/About";
+import { CaseStudy } from "./components/section/CaseStudy";
+import { Experience } from "./components/section/Experience";
+import { Home } from "./components/section/Home";
 
 function App() {
   return (
