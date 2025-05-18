@@ -4,7 +4,7 @@ import workPNG from "./../assets/work.png";
 export const About = () => {
   return (
     <section className="w-screen min-h-[50vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-2">
         <div className="flex gap-2 flex-col ">
           <h1 className="text-[min(10vw,70px)] leading-[0.9] font-bold tracking-tighter">
             ABOUT ME <span className="min-[832px]:hidden">🧑‍💻 </span>
@@ -15,9 +15,9 @@ export const About = () => {
             technology and building innovative, user-focused solutions through
             code. <br /> <br />
             What excites me most about software engineering is its power to
-            bring ideas to life and solve real-world problems. <br /> <br />I
-            consider myself a <strong>full-stack developer</strong>, skilled in
-            a variety of web technologies and always eager to expand my toolkit.{" "}
+            bring ideas to life and solve real-world problems. <br /> <br />I am
+            an experienced <strong>full-stack developer</strong>, skilled in a
+            variety of web technologies and always eager to expand my toolkit.{" "}
             <br /> <br />I enjoy building scalable applications and constantly
             explore new technologies to stay current and grow as an engineer.
           </p>
@@ -31,7 +31,7 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-2">
         <div className="max-[832px]:hidden">
           <img src={workPNG} alt="Work" className="object-contain w-xs" />
         </div>
