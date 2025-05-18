@@ -134,7 +134,9 @@ export const Experience = () => {
         </ul>
       </div>
       <button className="btn btn-soft bg-stone-600 text-white">
-        <a href={Resume} download></a>Download my Resume ↓
+        <a href={Resume} download>
+          Download my Resume ↓
+        </a>
       </button>
     </section>
   );

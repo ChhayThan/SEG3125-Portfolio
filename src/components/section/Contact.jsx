@@ -6,6 +6,7 @@ import github from "./../../assets/github.webp";
 import mail from "./../../assets/mail.webp";
 
 export const Contact = () => {
+  const [emailStatus, setEmailStatus] = useState("NONE");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,10 +24,19 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        alert("Message Sent!");
+        setEmailStatus("SENT");
         setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => {
+          setEmailStatus("NONE");
+        }, 5000);
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+
+      .catch(() => {
+        setEmailStatus("FAIL");
+        setTimeout(() => {
+          setEmailStatus("NONE");
+        }, 5000);
+      });
   };
 
   return (
@@ -36,53 +46,85 @@ export const Contact = () => {
       </h1>
 
       <div>
-        <fieldset className="fieldset bg-stone-200 border-base-300 rounded-box w-xs border p-4">
-          <legend className="fieldset-legend font-bold text-black text-xl">
-            Send me an email
-          </legend>
+        <form onSubmit={handleSubmit}>
+          <fieldset className="fieldset bg-stone-200 border-base-300 rounded-box w-xs border p-4">
+            <legend className="fieldset-legend font-bold text-black text-xl">
+              Send me an email
+            </legend>
 
-          <label className="label">Name</label>
-          <input
-            type="text"
-            className="input bg-white"
-            placeholder="John Doe"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            id="name"
-            name="name"
+            <label className="label">Name</label>
+            <input
+              type="text"
+              className="input bg-white"
+              placeholder="John Doe"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              id="name"
+              name="name"
+            />
+
+            <label className="label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              value={formData.email}
+              className="input bg-white"
+              placeholder="example@gmail.com"
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
+
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={5}
+              value={formData.message}
+              className="textarea bg-white"
+              placeholder="Your Message..."
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+            ></textarea>
+
+            <button
+              className="btn btn-soft mt-4 bg-yellow-600 border-yellow-900"
+              type="submit"
+            >
+              Send message
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <div
+        role="alert"
+        className={`alert alert-success sticky top-0 ${
+          emailStatus !== "NONE" ? "flex" : "hidden"
+        }`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
-
-          <label className="label">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={formData.email}
-            className="input bg-white"
-            placeholder="example@gmail.com"
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-          />
-
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows={5}
-            value={formData.message}
-            className="textarea bg-white"
-            placeholder="Your Message..."
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
-          ></textarea>
-
-          <button className="btn btn-soft mt-4 bg-yellow-600 border-yellow-900">
-            Send message
-          </button>
-        </fieldset>
+        </svg>
+        <span>
+          {emailStatus === "SENT"
+            ? "Message Sent!"
+            : "Oops, message failed to send... Please try again"}
+        </span>
       </div>
 
       <h1>Connect with me</h1>
