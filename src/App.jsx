@@ -1,6 +1,7 @@
 import "./App.css";
 import { About } from "./components/section/About";
 import { CaseStudy } from "./components/section/CaseStudy";
+import { Contact } from "./components/section/Contact";
 import { Experience } from "./components/section/Experience";
 import { Home } from "./components/section/Home";
 
@@ -11,6 +12,7 @@ function App() {
       <About />
       <CaseStudy />
       <Experience />
+      <Contact />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import Resume from "./../../assets/Resume.pdf";
+
 export const Experience = () => {
   return (
     <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">
@@ -9,7 +11,7 @@ export const Experience = () => {
         <ul className="timeline timeline-vertical">
           <li>
             <div className="timeline-start font-bold text-[min(5vw,1.25rem)]">
-              Jan - April 2025
+              Jan - Apr 2025
             </div>
             <div className="timeline-middle p-2">
               <svg
@@ -131,6 +133,9 @@ export const Experience = () => {
           </li>
         </ul>
       </div>
+      <button className="btn btn-soft bg-stone-600 text-white">
+        <a href={Resume} download></a>Download my Resume ↓
+      </button>
     </section>
   );
 };
