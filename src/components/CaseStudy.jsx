@@ -8,7 +8,7 @@ export const CaseStudy = () => {
 
       <div className="carousel carousel-center bg-stone-100 rounded-box  max-w-70  min-[500px]:max-w-[85vw] space-x-4 p-4 gap-5 shadow-md">
         <div className="carousel-item">
-          <div className="card w-60 min-[832px]:w-96 shadow-md">
+          <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
             </figure>
@@ -28,7 +28,7 @@ export const CaseStudy = () => {
         </div>
 
         <div className="carousel-item">
-          <div className="card w-60 min-[832px]:w-96 shadow-md">
+          <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
             </figure>
@@ -44,7 +44,7 @@ export const CaseStudy = () => {
         </div>
 
         <div className="carousel-item">
-          <div className="card w-60 min-[832px]:w-96 shadow-md">
+          <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
             </figure>
@@ -63,7 +63,7 @@ export const CaseStudy = () => {
         </div>
 
         <div className="carousel-item">
-          <div className="card w-60 min-[832px]:w-96 shadow-md">
+          <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
             </figure>

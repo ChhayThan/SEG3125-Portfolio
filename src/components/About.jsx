@@ -13,13 +13,11 @@ export const About = () => {
             I’m a <strong>second-year Software Engineering student</strong> at
             the <strong>University of Ottawa</strong> with a deep passion for
             technology and building innovative, user-focused solutions through
-            code. <br /> <br />
-            What excites me most about software engineering is its power to
-            bring ideas to life and solve real-world problems. <br /> <br />I am
-            an experienced <strong>full-stack developer</strong>, skilled in a
-            variety of web technologies and always eager to expand my toolkit.{" "}
-            <br /> <br />I enjoy building scalable applications and constantly
-            explore new technologies to stay current and grow as an engineer.
+            code. <br /> <br />I am an experienced{" "}
+            <strong>full-stack developer</strong>, skilled in a variety of web
+            technologies and always eager to expand my toolkit. <br /> <br />I
+            enjoy building scalable applications and constantly explore new
+            technologies to stay current and grow as an engineer.
           </p>
         </div>
         <div className="max-[832px]:hidden">
