@@ -48,10 +48,6 @@ export const Contact = () => {
       <div>
         <form onSubmit={handleSubmit}>
           <fieldset className="fieldset bg-stone-200 border-base-300 rounded-box w-xs border p-4">
-            <legend className="fieldset-legend font-bold text-black text-xl">
-              Send me an email
-            </legend>
-
             <label className="label">Name</label>
             <input
               type="text"
@@ -93,7 +89,7 @@ export const Contact = () => {
             ></textarea>
 
             <button
-              className="btn btn-soft mt-4 bg-yellow-600 border-yellow-900"
+              className="btn btn-outline text-white bg-stone-500 hover:bg-yellow-500 border-transparent"
               type="submit"
             >
               Send message
