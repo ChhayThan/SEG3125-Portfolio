@@ -7,6 +7,14 @@
   .icon {
     @apply w-[min(5vw,35px)] object-contain hover:-translate-y-0.5 transition-all ease-in duration-100;
   }
+
+  .caseStudyCards {
+    @apply hover:-translate-y-2 transition-all ease-in duration-200;
+  }
+
+  .caseStudyLinks {
+    @apply cursor-pointer text-yellow-600 font-bold hover:text-yellow-500;
+  }
 }
 
 @theme {

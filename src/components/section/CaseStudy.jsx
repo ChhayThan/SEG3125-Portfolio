@@ -7,7 +7,7 @@ export const CaseStudy = () => {
       </h1>
 
       <div className="carousel carousel-center bg-stone-100 rounded-box  max-w-70  min-[500px]:max-w-[85vw] space-x-4 p-4 gap-5 shadow-md">
-        <div className="carousel-item">
+        <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
@@ -23,11 +23,22 @@ export const CaseStudy = () => {
                 <div className="badge badge-outline">HTML/CSS</div>
                 <div className="badge badge-outline">Figma</div>
               </div>
+
+              <div className="pt-2 flex">
+                <button
+                  className="caseStudyLinks"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  <p className="font-bold">View case study →</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item">
+        <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
@@ -39,11 +50,22 @@ export const CaseStudy = () => {
                 <div className="badge badge-outline">React/JavaScript</div>
                 <div className="badge badge-outline">HTML/CSS</div>
               </div>
+
+              <div className="pt-2 flex">
+                <button
+                  className="caseStudyLinks"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  <p className="font-bold">View case study →</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item">
+        <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
@@ -58,11 +80,22 @@ export const CaseStudy = () => {
                 <div className="badge badge-outline">React/JavaScript</div>
                 <div className="badge badge-outline">HTML/CSS</div>
               </div>
+
+              <div className="pt-2 flex">
+                <button
+                  className="caseStudyLinks"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  <p className="font-bold">View case study →</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item">
+        <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
               <img src={comingSoonSign} alt="Coming soon image" />
@@ -77,9 +110,29 @@ export const CaseStudy = () => {
                 <div className="badge badge-outline">Data Plotting/Graph</div>
                 <div className="badge badge-outline">JavaScript</div>
               </div>
+
+              <div className="pt-2 flex">
+                <button
+                  className="caseStudyLinks"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  <p className="font-bold">View case study →</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <dialog id="my_modal_2" className="modal text-center">
+          <div className="modal-box bg-transparent shadow-none">
+            <p className="py-4 text-3xl text-white font-bold">Coming soon!</p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
       </div>
     </section>
   );
