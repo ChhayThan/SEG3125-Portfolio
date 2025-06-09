@@ -1,4 +1,5 @@
 import comingSoonSign from "./../../assets/comingsoonsign.png";
+import serviceSite from "./../../assets/ServiceSite.png";
 export const CaseStudy = () => {
   return (
     <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">
@@ -10,29 +11,33 @@ export const CaseStudy = () => {
         <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure>
-              <img src={comingSoonSign} alt="Coming soon image" />
+              <img src={serviceSite} alt="Coming soon image" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Design 1: Service site</h2>
               <p>
-                Description of this case study. A site for some kind of service
-                (e.g. dentist, bike repair, hairdresser)
+                TutoringService is dedicated to helping students succeed at
+                every stage of their academic journey. Whether you're in high
+                school or university, our mission is to provide personalized
+                support through expert-led tutoring, mentorship, and academic
+                guidance.
               </p>
               <div className="card-actions justify-end">
-                <div className="badge badge-outline">React/JavaScript</div>
-                <div className="badge badge-outline">HTML/CSS</div>
+                <div className="badge badge-outline">NextJS</div>
+                <div className="badge badge-outline">React/TypeScript</div>
+                <div className="badge badge-outline">TailwindCSS/DaisyUI</div>
                 <div className="badge badge-outline">Figma</div>
+                <div className="badge badge-outline">Git & CI/CD</div>
               </div>
 
               <div className="pt-2 flex">
-                <button
-                  className="caseStudyLinks"
-                  onClick={() =>
-                    document.getElementById("my_modal_2").showModal()
-                  }
+                <a
+                  href="https://tutoring-service.netlify.app/"
+                  target="_blank"
+                  className="caseStudyLinks font-bold"
                 >
-                  <p className="font-bold">View case study →</p>
-                </button>
+                  View case study →
+                </a>
               </div>
             </div>
           </div>
