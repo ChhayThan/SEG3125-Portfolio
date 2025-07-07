@@ -1,6 +1,7 @@
 import comingSoonSign from "./../../assets/comingsoonsign.png";
 import serviceSite from "./../../assets/ServiceSite.png";
 import memoryGame from "./../../assets/MemoryGame.png";
+import Ecommerce from "./../../assets/Ecommerce.png";
 export const CaseStudy = () => {
   return (
     <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">
@@ -89,28 +90,35 @@ export const CaseStudy = () => {
         <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure className="basis-1/2 h-full">
-              <img src={comingSoonSign} alt="Coming soon image" />
+              <img src={Ecommerce} alt="Screenshot of Furniture Forest" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Design 3: An E-commerce Website</h2>
+              <h2 className="card-title">
+                Design 3: Furniture Forest - Ecommerce Store
+              </h2>
               <p>
-                Description of this case study. Designing and developing an
-                e-commerce website.
+                Furniture Forest was founded in 2025 with a simple mission: to
+                bring high-quality, stylish, and sustainable furniture to
+                Canadian homes. Our collection features handcrafted solid wood
+                tables, modular sofas made with eco-friendly fabrics, and decor
+                accents inspired by nature.
               </p>
               <div className="card-actions justify-end">
-                <div className="badge badge-outline">React/JavaScript</div>
-                <div className="badge badge-outline">HTML/CSS</div>
+                <div className="badge badge-outline">NextJS</div>
+                <div className="badge badge-outline">TailwindCSS/DaisyUI</div>
+                <div className="badge badge-outline">Figma</div>
+                <div className="badge badge-outline">FontAwesome</div>
+                <div className="badge badge-outline">Git & CI/CD</div>
               </div>
 
               <div className="pt-2 flex">
-                <button
-                  className="caseStudyLinks"
-                  onClick={() =>
-                    document.getElementById("my_modal_2").showModal()
-                  }
+                <a
+                  href="https://furniture-forest.netlify.app/"
+                  target="_blank"
+                  className="caseStudyLinks font-bold"
                 >
-                  <p className="font-bold">View case study →</p>
-                </button>
+                  View case study →
+                </a>
               </div>
             </div>
           </div>
