@@ -155,14 +155,13 @@ export const CaseStudy = () => {
               </div>
 
               <div className="pt-2 flex">
-                <button
-                  className="caseStudyLinks"
-                  onClick={() =>
-                    document.getElementById("my_modal_2").showModal()
-                  }
+                <a
+                  href="https://monthlybud.netlify.app/"
+                  target="_blank"
+                  className="caseStudyLinks font-bold"
                 >
-                  <p className="font-bold">View case study →</p>
-                </button>
+                  View case study →
+                </a>
               </div>
             </div>
           </div>
