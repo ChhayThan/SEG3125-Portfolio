@@ -2,13 +2,18 @@ import comingSoonSign from "./../../assets/comingsoonsign.png";
 import serviceSite from "./../../assets/ServiceSite.png";
 import memoryGame from "./../../assets/MemoryGame.png";
 import Ecommerce from "./../../assets/Ecommerce.png";
+import Dashboard from "./../../assets/Dashboard.png";
 export const CaseStudy = () => {
   return (
-    <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-20">
+    <section className="w-screen min-h-[80vh] p-5 space-y-5 flex flex-col  justify-center items-center gap-10">
       <h1 className="text-[min(10vw,70px)] leading-[0.9] font-bold tracking-tighter text-left">
         CASE STUDY 🧑‍🎨
       </h1>
-
+      <h2 class="text-center text-lg">
+        Scroll through the carousel <br />
+        <br />
+        <span class="inline-block text-2xl animate-bounce">↓</span>
+      </h2>
       <div className="carousel carousel-center bg-stone-100 rounded-box  max-w-70  min-[500px]:max-w-[85vw] space-x-4 p-4 gap-5 shadow-md">
         <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
@@ -127,17 +132,26 @@ export const CaseStudy = () => {
         <div className="carousel-item caseStudyCards">
           <div className="card w-60 min-[832px]:w-96 shadow-md bg-white">
             <figure className="basis-1/2 h-full">
-              <img src={comingSoonSign} alt="Coming soon image" />
+              <img
+                src={Dashboard}
+                alt="Screenshot of MonthlyBud - a financial dashboard application"
+              />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Design 4: An Analytical Site</h2>
+              <h2 className="card-title">
+                Design 4: MonthlyBud Financial Tracker
+              </h2>
               <p>
-                Description of this case study. Designing and developing an
-                analytics site (BI, sport, anything with visualization)
+                The primary goal of ‘MonthlyBud’ dashboard is to provide users
+                with a simple yet powerful tool for tracking their personal
+                finances. <br /> Visualize spending habits, compare income
+                against expenses, and analyze financial trends over time.
               </p>
               <div className="card-actions justify-end">
-                <div className="badge badge-outline">Data Plotting/Graph</div>
-                <div className="badge badge-outline">JavaScript</div>
+                <div className="badge badge-outline">ChartJS</div>
+                <div className="badge badge-outline">ReactTypescript</div>
+                <div className="badge badge-outline">TailwindCSS</div>
+                <div className="badge badge-outline">DaisyUI & Vite</div>
               </div>
 
               <div className="pt-2 flex">
